@@ -69,7 +69,6 @@ Investor must not use other wallets, coinmarkets or stocks. Can lose money.
 
 #### Presale
 * _Hardcap_                    : 2000 ETH
-* _Period_                     : 
 * _Start_                      : 29 March 2018 13:00:00 GMT
 * _Wallet_                     : 
 
