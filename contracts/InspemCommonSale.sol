@@ -1,4 +1,4 @@
-
+pragma solidity ^0.4.18;
 
 import './ReferersRewardFeature.sol';
 import './RetrieveTokensFeature.sol';
