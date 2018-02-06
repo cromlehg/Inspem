@@ -48,7 +48,7 @@ Investor must not use other wallets, coinmarkets or stocks. Can lose money.
 ## Main network configuration
 
 * _Minimal insvested limit_     : 0.1 ETH
-* _Price_                       : 1 ETH = 10 000 INP
+* _Price_                       : 1 ETH = 5 000 INP
 * _Bounty tokens percent_       : 5% 
 * _Founders tokens percent_     : 15% 
 * _For sale tokens percent_     : 80% 
