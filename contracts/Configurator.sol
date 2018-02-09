@@ -55,7 +55,7 @@ contract Configurator is Ownable {
   function commonConfigure(address saleAddress, address _token) internal {
      InspemCommonSale sale = InspemCommonSale(saleAddress);
      sale.setRefererPercent(5);
-     sale.setMinInvestedLimit(10000000000000000);
+     sale.setMinInvestedLimit(100000000000000000);
      sale.setToken(_token);
   }
 
