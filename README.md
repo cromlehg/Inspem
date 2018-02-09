@@ -1,4 +1,4 @@
-![Inspem](logo.png "Inspem")
+![Inspem](logo.jpg "Inspem")
 
 # Inspem smart contract
 
