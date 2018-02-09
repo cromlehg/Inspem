@@ -52,8 +52,8 @@ Investor must not use other wallets, coinmarkets or stocks. Can lose money.
 * _Bounty tokens percent_       : 5% 
 * _Founders tokens percent_     : 15% 
 * _For sale tokens percent_     : 80% 
-* _Founders tokens wallet_      :  
-* _Bounty tokens wallet_        : 
+* _Founders tokens wallet_      : 0xAFA1bFDF3112d4d3e9CaC4A100a0eBf22231878c
+* _Bounty tokens wallet_        : 0x3c0260Ce19363350264D23Fd1A48F50001dBb5ee
 * _Contract owner_              : 
 
 ### Links
@@ -70,7 +70,7 @@ Investor must not use other wallets, coinmarkets or stocks. Can lose money.
 #### Presale
 * _Hardcap_                    : 2 000 ETH
 * _Start_                      : 29 March 2018 13:00:00 GMT
-* _Wallet_                     : 
+* _Wallet_                     : 0x16Af606E2f396DDdde61809A2C73b8E64A81c1Ea
 
 _Milestones_
 1. 14 days                     : bonus +100% 
@@ -79,7 +79,7 @@ _Milestones_
 #### ICO
 * _Hardcap_                    : 30 000 ETH
 * _Start_                      : 
-* _Wallet_                     : 
+* _Wallet_                     : 0xb24EDbc6d7EDa33af4A91d57c621e5eB86c02BcF
 
 _Milestones_
 1. 7 days                      : bonus +30% 

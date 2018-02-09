@@ -73,15 +73,15 @@ contract('Configurator integration test', function (accounts) {
 
   it('presale and mainsale should have wallets as described in README', async function () {
     const presaleWallet = await presale.wallet();
-    presaleWallet.should.bignumber.equal('0x95EA6A4ec9F80436854702e5F05d238f27166A03');
+    presaleWallet.should.bignumber.equal('0x16Af606E2f396DDdde61809A2C73b8E64A81c1Ea');
     const mainsaleWallet = await mainsale.wallet();
-    mainsaleWallet.should.bignumber.equal('0x95EA6A4ec9F80436854702e5F05d238f27166A03');
+    mainsaleWallet.should.bignumber.equal('0xb24EDbc6d7EDa33af4A91d57c621e5eB86c02BcF');
   });
 
   it('Bounty wallet and founders wallet should be as described in README', async function () {
     const bountyWallet = await mainsale.bountyTokensWallet();
-    bountyWallet.should.bignumber.equal('0x95EA6A4ec9F80436854702e5F05d238f27166A04');
+    bountyWallet.should.bignumber.equal('0x3c0260Ce19363350264D23Fd1A48F50001dBb5ee');
     const foundersWallet = await mainsale.foundersTokensWallet();
-    foundersWallet.should.bignumber.equal('0x95EA6A4ec9F80436854702e5F05d238f27166A05');
+    foundersWallet.should.bignumber.equal('0xAFA1bFDF3112d4d3e9CaC4A100a0eBf22231878c');
   });
 });

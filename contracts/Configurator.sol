@@ -14,7 +14,6 @@ contract Configurator is Ownable {
   Mainsale public mainsale;
 
   function deploy() public onlyOwner {
-    //owner = 0x95EA6A4ec9F80436854702e5F05d238f27166A03;
 
     token = new InspemToken();
 
@@ -22,7 +21,7 @@ contract Configurator is Ownable {
 
     presale.addMilestone(14, 100);
     presale.addMilestone(14, 50);
-    presale.setWallet(0x95EA6A4ec9F80436854702e5F05d238f27166A03);
+    presale.setWallet(0x16Af606E2f396DDdde61809A2C73b8E64A81c1Ea);
     presale.setStart(1522328400);
     presale.setPrice(5000000000000000000000);
     presale.setHardcap(2000000000000000000000);
@@ -36,9 +35,9 @@ contract Configurator is Ownable {
     mainsale.addMilestone(7, 10);
     mainsale.addMilestone(7, 0);
     mainsale.setPrice(5000000000000000000000);
-    mainsale.setWallet(0x95EA6A4ec9F80436854702e5F05d238f27166A03);
-    mainsale.setFoundersTokensWallet(0x95EA6A4ec9F80436854702e5F05d238f27166A05);
-    mainsale.setBountyTokensWallet(0x95EA6A4ec9F80436854702e5F05d238f27166A04);
+    mainsale.setWallet(0xb24EDbc6d7EDa33af4A91d57c621e5eB86c02BcF);
+    mainsale.setFoundersTokensWallet(0xAFA1bFDF3112d4d3e9CaC4A100a0eBf22231878c);
+    mainsale.setBountyTokensWallet(0x3c0260Ce19363350264D23Fd1A48F50001dBb5ee);
     mainsale.setStart(1525179600);
     mainsale.setHardcap(30000000000000000000000);
     mainsale.setFoundersTokensPercent(15);
@@ -53,10 +52,10 @@ contract Configurator is Ownable {
   }
 
   function commonConfigure(address saleAddress, address _token) internal {
-     InspemCommonSale sale = InspemCommonSale(saleAddress);
-     sale.setRefererPercent(5);
-     sale.setMinInvestedLimit(100000000000000000);
-     sale.setToken(_token);
+    InspemCommonSale sale = InspemCommonSale(saleAddress);
+    sale.setRefererPercent(5);
+    sale.setMinInvestedLimit(100000000000000000);
+    sale.setToken(_token);
   }
 
 }
