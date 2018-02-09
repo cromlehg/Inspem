@@ -1,6 +1,6 @@
 pragma solidity ^0.4.18;
 
-import 'localhost/ownership/Ownable.sol';
+import './ownership/Ownable.sol';
 
 contract InspemToken {
    function setSaleAgent(address newSaleAgent) public;
