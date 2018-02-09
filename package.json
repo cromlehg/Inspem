@@ -26,7 +26,7 @@
     "test": "./scripts/test.sh",
     "flatten": "./node_modules/.bin/truffle-flattener ./contracts/Configurator.sol > ./deploy/contracts.sol",
     "flatten-configurator": "./node_modules/.bin/truffle-flattener ./contracts/TestConfigurator.sol > ./deploy/TestConfigurator.sol",
-    "flatten-token": "./node_modules/.bin/truffle-flattener ./contracts/Token.sol > ./deploy/Token.sol",
+    "flatten-token": "./node_modules/.bin/truffle-flattener ./contracts/InspemToken.sol > ./deploy/InspemToken.sol",
     "flatten-presale": "./node_modules/.bin/truffle-flattener ./contracts/Presale.sol > ./deploy/Presale.sol",
     "flatten-mainsale": "./node_modules/.bin/truffle-flattener ./contracts/Mainsale.sol > ./deploy/Mainsale.sol",
     "flatten-test": "npm run flatten-configurator && npm run flatten-token && npm run flatten-presale && npm run flatten-mainsale"
