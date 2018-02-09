@@ -23,9 +23,9 @@ contract Configurator is Ownable {
     presale.addMilestone(14, 100);
     presale.addMilestone(14, 50);
     presale.setWallet(0x95EA6A4ec9F80436854702e5F05d238f27166A03);
-    presale.setStart(1518393600);
-    presale.setPrice(1600000000000000000000);
-    presale.setHardcap(1000000000000000000000);
+    presale.setStart(1522328400);
+    presale.setPrice(5000000000000000000000);
+    presale.setHardcap(2000000000000000000000);
     token.setSaleAgent(presale);
     commonConfigure(presale, token);
 
@@ -35,12 +35,12 @@ contract Configurator is Ownable {
     mainsale.addMilestone(7, 20);
     mainsale.addMilestone(7, 10);
     mainsale.addMilestone(7, 0);
-    mainsale.setPrice(1000000000000000000000);
+    mainsale.setPrice(5000000000000000000000);
     mainsale.setWallet(0x95EA6A4ec9F80436854702e5F05d238f27166A03);
     mainsale.setFoundersTokensWallet(0x95EA6A4ec9F80436854702e5F05d238f27166A05);
     mainsale.setBountyTokensWallet(0x95EA6A4ec9F80436854702e5F05d238f27166A04);
-    mainsale.setStart(1520640000);
-    mainsale.setHardcap(20000000000000000000000);
+    mainsale.setStart(1525179600);
+    mainsale.setHardcap(30000000000000000000000);
     mainsale.setFoundersTokensPercent(15);
     mainsale.setBountyTokensPercent(5);
     commonConfigure(mainsale, token);
