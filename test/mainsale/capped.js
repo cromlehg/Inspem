@@ -25,7 +25,7 @@ export default function (Token, Crowdsale, wallets) {
     this.end = this.start + duration.days(this.duration);
     this.afterEnd = this.end + duration.seconds(1);
     this.price = tokens(5000);
-    this.hardcap = ether(70);
+    this.hardcap = ether(2000);
     this.minInvestedLimit = ether(0.1);
 
     token = await Token.new();
@@ -60,7 +60,7 @@ export default function (Token, Crowdsale, wallets) {
   });
 
   it('should not accept payments that exceed hardcap', async function () {
-	await crowdsale.sendTransaction({value:this.hardcap, from: wallets[6]}); 
+    await crowdsale.sendTransaction({value: this.hardcap, from: wallets[6]});
     await crowdsale.sendTransaction({value: ether(1), from: wallets[6]}).should.be.rejectedWith(EVMRevert);
   });
 

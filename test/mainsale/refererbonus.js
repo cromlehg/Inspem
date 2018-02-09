@@ -51,30 +51,30 @@ export default function (Token, Crowdsale, wallets) {
     await token.transferOwnership(wallets[1]);
   });
 
-  it('should add referer bonus', async function () {	
-    await crowdsale.sendTransaction({value: ether(1), from: wallets[6], data: wallets[5]});	
+  it('should add referer bonus', async function () {
+    await crowdsale.sendTransaction({value: ether(1), from: wallets[6], data: wallets[5]});
     const refbalance = await token.balanceOf(wallets[5]);
-    const balance = await token.balanceOf(wallets[6]);	
+    const balance = await token.balanceOf(wallets[6]);
     refbalance.should.be.bignumber.equal(balance * 0.05);
   });
-  
-   it('should works normal if referer is not specified', async function () {  
-    await crowdsale.sendTransaction({value: ether(1), from: wallets[6], data: ''}).should.be.fulfilled;; 
+
+  it('should works normal if referer is not specified', async function () {
+    await crowdsale.sendTransaction({value: ether(1), from: wallets[6], data: ''}).should.be.fulfilled;
     const balance = await token.balanceOf(wallets[6]);
-    balance.should.be.bignumber.equal(this.price.times(1.3));	
-  }); 
-  
-  it('investor сannot accrue bonus to himself', async function () {  
-    await crowdsale.sendTransaction({value: ether(1), from: wallets[6], data: wallets[6]}).should.be.rejectedWith(EVMRevert); 
+    balance.should.be.bignumber.equal(this.price.times(1.3));
   });
 
-  it('token contract сannot get referer bonus', async function () {  
-    const referer = token.address;
-    await crowdsale.sendTransaction({value: ether(1), from: wallets[6], data: referer}).should.be.rejectedWith(EVMRevert); 	
-  });  
+  it('investor сannot accrue bonus to himself', async function () {
+    await crowdsale.sendTransaction({value: ether(1), from: wallets[6], data: wallets[6]}).should.be.rejectedWith(EVMRevert);
+  });
 
-  it('crowdsale contract сannot get referer bonus', async function () {  
+  it('token contract сannot get referer bonus', async function () {
+    const referer = token.address;
+    await crowdsale.sendTransaction({value: ether(1), from: wallets[6], data: referer}).should.be.rejectedWith(EVMRevert);
+  });
+
+  it('crowdsale contract сannot get referer bonus', async function () {
     const referer = crowdsale.address;
-    await crowdsale.sendTransaction({value: ether(1), from: wallets[6], data: referer}).should.be.rejectedWith(EVMRevert); 
-  }); 
+    await crowdsale.sendTransaction({value: ether(1), from: wallets[6], data: referer}).should.be.rejectedWith(EVMRevert);
+  });
 }

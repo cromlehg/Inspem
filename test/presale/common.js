@@ -20,7 +20,7 @@ export default function (Token, Crowdsale, wallets) {
   });
 
   beforeEach(async function () {
-    this.start = latestTime();	
+    this.start = latestTime();
     this.duration = 28;
     this.end = this.start + duration.days(this.duration);
     this.afterEnd = this.end + duration.seconds(1);
@@ -44,8 +44,8 @@ export default function (Token, Crowdsale, wallets) {
   });
 
   it('crowdsale should be a saleAgent for token', async function () {
-    const owner = await token.saleAgent();
-    owner.should.equal(crowdsale.address);
+    const saleAgent = await token.saleAgent();
+    saleAgent.should.equal(crowdsale.address);
   });
 
   it('end should be equal to start + duration', async function () {
