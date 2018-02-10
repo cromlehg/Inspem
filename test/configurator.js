@@ -45,7 +45,7 @@ contract('Configurator integration test', function (accounts) {
 
   it('presale and mainsale should have start time as described in README', async function () {
     const presaleStart = await presale.start();
-    presaleStart.should.bignumber.equal((new Date('29 March 2018 13:00:00 GMT')).getTime() / 1000);
+    presaleStart.should.bignumber.equal((new Date('20 March 2018 13:00:00 GMT')).getTime() / 1000);
     const mainsaleStart = await mainsale.start();
     mainsaleStart.should.bignumber.equal((new Date('01 May 2018 13:00:00 GMT')).getTime() / 1000);
   });

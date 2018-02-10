@@ -22,7 +22,7 @@ contract Configurator is Ownable {
     presale.addMilestone(14, 100);
     presale.addMilestone(14, 50);
     presale.setWallet(0x16Af606E2f396DDdde61809A2C73b8E64A81c1Ea);
-    presale.setStart(1522328400);
+    presale.setStart(1521550800);
     presale.setPrice(5000000000000000000000);
     presale.setHardcap(2000000000000000000000);
     token.setSaleAgent(presale);

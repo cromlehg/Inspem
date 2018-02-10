@@ -69,7 +69,7 @@ Investor must not use other wallets, coinmarkets or stocks. Can lose money.
 
 #### Presale
 * _Hardcap_                    : 2 000 ETH
-* _Start_                      : 29 March 2018 13:00:00 GMT
+* _Start_                      : 20 March 2018 13:00:00 GMT
 * _Wallet_                     : 0x16Af606E2f396DDdde61809A2C73b8E64A81c1Ea
 
 _Milestones_
@@ -78,7 +78,7 @@ _Milestones_
 
 #### ICO
 * _Hardcap_                    : 30 000 ETH
-* _Start_                      : 
+* _Start_                      : 01 May 2018 13:00:00 GMT
 * _Wallet_                     : 0xb24EDbc6d7EDa33af4A91d57c621e5eB86c02BcF
 
 _Milestones_
