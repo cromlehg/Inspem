@@ -57,7 +57,7 @@ Investor must not use other wallets, coinmarkets or stocks. Can lose money.
 * _Contract owner_              : 0x3e886934D9d2414186CE54477F7CC3bBE164022a
 
 ### Links
-1. _Token_ - https://etherscan.io/address/0x53507e1c859463e6c2677c4c8be3e5ee05b2846e
+1. _Token_ - https://etherscan.io/token/0x53507e1c859463e6c2677c4c8be3e5ee05b2846e
 2. _Presale_ - https://etherscan.io/address/0xa93af667ee2a571298fa3eb6d68d4c24f27ea42e
 3. _Mainsale_ - https://etherscan.io/address/0x2024668c1bbf8f5d381f05d2307daf1f94dcf8df
 
