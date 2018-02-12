@@ -661,8 +661,10 @@ contract Configurator is Ownable {
   function deploy() public onlyOwner {
 
     token = new InspemToken();
-
     presale = new Presale();
+    mainsale = new Mainsale();
+
+    token.setSaleAgent(presale);
 
     presale.addMilestone(14, 100);
     presale.addMilestone(14, 50);
@@ -670,10 +672,10 @@ contract Configurator is Ownable {
     presale.setStart(1521550800);
     presale.setPrice(5000000000000000000000);
     presale.setHardcap(2000000000000000000000);
-    token.setSaleAgent(presale);
-    commonConfigure(presale, token);
-
-    mainsale = new Mainsale();
+    presale.setMinInvestedLimit(100000000000000000);
+    presale.setRefererPercent(5);
+    presale.setToken(token);
+    presale.setNextSaleAgent(mainsale);
 
     mainsale.addMilestone(7, 30);
     mainsale.addMilestone(7, 20);
@@ -685,24 +687,16 @@ contract Configurator is Ownable {
     mainsale.setBountyTokensWallet(0x3c0260Ce19363350264D23Fd1A48F50001dBb5ee);
     mainsale.setStart(1525179600);
     mainsale.setHardcap(30000000000000000000000);
+    mainsale.setMinInvestedLimit(100000000000000000);
+    mainsale.setRefererPercent(5);
     mainsale.setFoundersTokensPercent(15);
     mainsale.setBountyTokensPercent(5);
-    commonConfigure(mainsale, token);
-
-    presale.setNextSaleAgent(mainsale);
+    mainsale.setToken(token);
 
     address manager = 0x3e886934D9d2414186CE54477F7CC3bBE164022a;
-
     token.transferOwnership(manager);
     presale.transferOwnership(manager);
     mainsale.transferOwnership(manager);
-  }
-
-  function commonConfigure(address saleAddress, address _token) internal {
-    InspemCommonSale sale = InspemCommonSale(saleAddress);
-    sale.setRefererPercent(5);
-    sale.setMinInvestedLimit(100000000000000000);
-    sale.setToken(_token);
   }
 
 }
