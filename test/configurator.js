@@ -36,11 +36,11 @@ contract('Configurator integration test', function (accounts) {
 
   it('contracts should have owner', async function () {
     const tokenOwner = await token.owner();
-    tokenOwner.should.equal(accounts[0]);
+    tokenOwner.should.equal('0x3e886934D9d2414186CE54477F7CC3bBE164022a');
     const presaleOwner = await presale.owner();
-    presaleOwner.should.equal(accounts[0]);
+    presaleOwner.should.equal('0x3e886934D9d2414186CE54477F7CC3bBE164022a');
     const mainsaleOwner = await mainsale.owner();
-    mainsaleOwner.should.equal(accounts[0]);
+    mainsaleOwner.should.equal('0x3e886934D9d2414186CE54477F7CC3bBE164022a');
   });
 
   it('presale and mainsale should have start time as described in README', async function () {

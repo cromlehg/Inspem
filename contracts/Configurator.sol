@@ -46,9 +46,11 @@ contract Configurator is Ownable {
 
     presale.setNextSaleAgent(mainsale);
 
-    token.transferOwnership(owner);
-    presale.transferOwnership(owner);
-    mainsale.transferOwnership(owner);
+    address manager = 0x3e886934D9d2414186CE54477F7CC3bBE164022a;
+
+    token.transferOwnership(manager);
+    presale.transferOwnership(manager);
+    mainsale.transferOwnership(manager);
   }
 
   function commonConfigure(address saleAddress, address _token) internal {

@@ -54,7 +54,7 @@ Investor must not use other wallets, coinmarkets or stocks. Can lose money.
 * _For sale tokens percent_     : 80% 
 * _Founders tokens wallet_      : 0xAFA1bFDF3112d4d3e9CaC4A100a0eBf22231878c
 * _Bounty tokens wallet_        : 0x3c0260Ce19363350264D23Fd1A48F50001dBb5ee
-* _Contract owner_              : 
+* _Contract owner_              : 0x3e886934D9d2414186CE54477F7CC3bBE164022a
 
 ### Links
 1. _Token_ -
